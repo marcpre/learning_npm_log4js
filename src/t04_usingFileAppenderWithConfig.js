@@ -1,14 +1,14 @@
-// require Log4js
+
+// require log4js
 const log4js = require('log4js');
 
 // Logger configuration
-log4js.configure({
-    appenders: { fileAppender: { type: 'file', filename: './logs/logging.log' } },
-    categories: { default: { appenders: ['fileAppender'], level: 'info' } }
-});
+log4js.configure("./config/t04_log4js-config.json");
 
-// Create the logger
 const logger = log4js.getLogger();
+
+logger.level = 'info';
+logger.info('Beginning program execution...');
 
 // Log a message
 logger.trace('Trace, log4js!');
