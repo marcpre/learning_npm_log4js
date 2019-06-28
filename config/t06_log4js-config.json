@@ -10,7 +10,8 @@
             "flags": "w",
             "pattern": ".yyyy-MM-dd-hh-mm-ss", 
             "compress": true,
-            "alwaysIncludePattern": true
+            "alwaysIncludePattern": true,
+            "numToKeep": 3
         }
     },
     "categories": {
